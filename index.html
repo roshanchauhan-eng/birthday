@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Tannu 🎂</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:black;overflow:hidden;color:white}
+.page{display:none;position:absolute;top:0;left:0;width:100%;height:100%}
+.active{display:block}
+
+/* FLOATING HEARTS */
+.heart{
+ position:absolute;
+ bottom:-20px;
+ font-size:20px;
+ animation: float 6s linear infinite;
+}
+@keyframes float{
+ to{transform:translateY(-110vh);opacity:0}
+}
+
+/* BALLOON */
+#balloonWrapper{
+ position:absolute;
+ left:50%;
+ bottom:-250px;
+ transform:translateX(-50%);
+ animation: rise 2s forwards;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+}
+@keyframes rise{
+ to{bottom:35%}
+}
+#balloon{
+ width:120px;height:160px;
+ background:red;
+ border-radius:50%;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-size:20px;
+ font-weight:bold;
+ transition:0.3s;
+}
+#string{
+ width:2px;height:90px;
+ background:white;
+}
+
+/* BLAST */
+.particle{
+ position:absolute;
+ font-size:18px;
+ animation: blast 1.2s forwards;
+}
+@keyframes blast{
+ to{
+  transform:translate(var(--x),var(--y)) scale(0);
+  opacity:0;
+ }
+}
+
+/* PAGE 2 */
+.center{
+ position:absolute;
+ top:35%;left:50%;
+ transform:translate(-50%,-50%);
+ text-align:center;
+ animation: zoomIn 1.2s;
+}
+@keyframes zoomIn{
+ from{opacity:0;transform:translate(-50%,-50%) scale(0.5)}
+ to{opacity:1;transform:translate(-50%,-50%) scale(1)}
+}
+.bigText{font-size:34px;font-weight:bold}
+.subText{font-size:24px;margin-top:10px}
+.heartIcon{
+ font-size:42px;margin:10px;
+ animation: beat 1.2s infinite;
+}
+@keyframes beat{50%{transform:scale(1.3)}}
+
+/* SLIDER */
+.sliderBox{
+ position:absolute;
+ top:60%;left:50%;
+ transform:translate(-50%,-50%);
+ width:80%;
+ text-align:center;
+}
+
+/* PAGE 3 */
+.letter{
+ padding:25px;
+ line-height:1.8;
+ font-size:15px;
+ height:100%;
+ overflow-y:auto;
+ animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+ from{opacity:0}
+ to{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+ <div id="balloonWrapper">
+  <div id="balloon">Tap 18x</div>
+  <div id="string"></div>
+ </div>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+ <div class="center">
+  <div class="bigText">🎉 HAPPY 18TH BIRTHDAY 🎉</div>
+  <div class="subText">My Dear Love Tannu ❤️</div>
+  <div>
+   <span class="heartIcon" style="color:red">❤️</span>
+   <span class="heartIcon" style="color:black">🖤</span>
+  </div>
+ </div>
+
+ <div class="sliderBox">
+  <div id="count">0 / 18</div>
+  <input type="range" min="0" max="18" value="0" id="slider">
+  <p>I love you my potato 🥔❤️</p>
+ </div>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+ <div class="letter">
+  <h2>💌 Hello My Love Potato</h2>
+
+  <p>
+   Mai tera apna <b>Roshan</b> ❤️<br><br>
+
+   Sabse pehle to <b>Happiest 18th Birthday</b> meri jaan 🎂💖  
+   I love you ❤️  
+   Aur hum jaldi hi saath me <b>4 years complete</b> kar lenge 🥹<br><br>
+
+   Tu mujhse bahut door hai isliye mujhe yeh sab digitally karna pad raha hai,
+   par tu jitni bhi ladai kar le,
+   <b>mai tera picha kabhi chhodne wala nahi hu</b> 😌❤️  
+   Kyuki hume shaddi karni hai
+   aur milkar bahut kuch karna hai — hehehehehehehe 😄<br><br>
+
+   Dekh tu apna dhyaan rakha kar,
+   fake logon se door rehna,
+   aur wahan padhai achhe se karna 📚  
+   Tu bahut achhi doctor banegi 🩺  
+   Sabko tujh par bahut bharosa hai ❤️<br><br>
+
+   Mai tere saath <b>hamesha rahunga</b> —
+   hamesha matlab hamesha 🤞  
+   Tu mujhse door hai isliye mai tera khayal nahi rakh pata,
+   par jab tu mere paas hogi na,
+   mai tera poora khayal rakhunga,
+   tujhe khush rakhunga 🥹❤️<br><br>
+
+   Isliye mujhse jaldi se jaldi shaddi kar leni chahiye 😌  
+   Aur waise bhi,
+   mere jaisa pagal ladka tujhe dobara milne wala nahi hai samjhi 😜<br><br>
+
+   Mujhe zyada likhna nahi aata,
+   par tere liye maine yeh sab dil se kiya ❤️  
+   Isko banane me mujhe bahut din lage,
+   kyuki yeh pura <b>code se bana hua</b> hai 🧑‍💻  
+   I hope tujhe yeh pasand aayega 💖<br><br>
+
+   Enjoy your day meri jaan 🎉  
+   <b>Hum hamesha saath rahenge</b> ❤️<br><br>
+
+   <b>
+   .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+   I LOVE YOU POTATO 🥔❤️
+   </b>
+  </p>
+
+  <p><b>— Forever Yours, Roshan ❤️</b></p>
+ </div>
+</div>
+
+<script>
+/* HEARTS BACKGROUND */
+setInterval(()=>{
+ let h=document.createElement("div");
+ h.className="heart";
+ h.innerHTML="❤️";
+ h.style.left=Math.random()*100+"%";
+ h.style.color=`hsl(${Math.random()*360},100%,60%)`;
+ h.style.animationDuration=(3+Math.random()*4)+"s";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),6000);
+},300);
+
+/* BALLOON TAP */
+let taps=0;
+const balloon=document.getElementById("balloon");
+
+balloon.onclick=()=>{
+ taps++;
+ balloon.style.background=`hsl(${Math.random()*360},100%,50%)`;
+ balloon.innerText=taps+"/18";
+
+ if(taps==18){
+  blast();
+  document.getElementById("balloonWrapper").style.transform="translateX(-50%) scale(2)";
+  setTimeout(()=>{
+   page1.classList.remove("active");
+   page2.classList.add("active");
+  },1000);
+ }
+}
+
+/* BLAST EFFECT */
+function blast(){
+ for(let i=0;i<30;i++){
+  let p=document.createElement("div");
+  p.className="particle";
+  p.innerHTML=Math.random()>0.5?"🎉":"❤️";
+  p.style.left="50%";
+  p.style.top="40%";
+  p.style.setProperty("--x",(Math.random()*400-200)+"px");
+  p.style.setProperty("--y",(Math.random()*400-200)+"px");
+  document.body.appendChild(p);
+  setTimeout(()=>p.remove(),1200);
+ }
+}
+
+/* SLIDER */
+slider.oninput=()=>{
+ count.innerText=slider.value+" / 18";
+ if(slider.value==18){
+  page2.classList.remove("active");
+  page3.classList.add("active");
+ }
+}
+</script>
+
+</body>
+</html>
